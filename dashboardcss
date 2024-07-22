@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+li.active, li:hover {
+    background-color: #34495e;
+}
+
+.invite-btn {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-range input, .conversion-event-btn, .project-dropdown {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.summary {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metric-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    width: 23%;
+}
+
+.metric-card h3 {
+    margin: 0;
+}
+
+.metric-card p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+.growth {
+    color: green;
+}
+
+.tables {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container {
+    width: 48%;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+}
+
+.see-more-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0 0;
+}
