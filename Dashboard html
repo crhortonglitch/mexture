@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Mexture</div>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Post Analytics</li>
+            <li>Topics and Suggestions</li>
+            <li>Audiences</li>
+            <li>Teams</li>
+            <li>Settings</li>
+        </ul>
+        <button class="invite-btn">Invite Teammates</button>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <div class="date-range">
+                <input type="text" value="4/22/2024 - 5/22/2024">
+            </div>
+            <button class="conversion-event-btn">Conversion Event</button>
+            <div class="project-dropdown">Mexture's Project</div>
+        </div>
+        <div class="summary">
+            <h2>Your Summary</h2>
+            <p>Hello Cameron!</p>
+            <p>It looks like three of your recent posts on Content Analytics impacted the likelihood of conversion by 10x. Your most recent post about marketing tips impacted leads by 5x, which is lower than your average.</p>
+            <p>Good next steps would be to write a post about Content Analytics or LinkedIn organic tips since these topics had a 9 & 10x impact on revenue. You could be leaving $10k in leads on the table.</p>
+            <input type="text" placeholder="Ask Mexture">
+        </div>
+        <div class="metrics">
+            <div class="metric-card">
+                <h3>Total Revenue</h3>
+                <p>$15M <span class="growth">^75%</span></p>
+            </div>
+            <div class="metric-card">
+                <h3>Influenced Pipeline</h3>
+                <p>$5.7M <span class="growth">^82%</span></p>
+            </div>
+            <div class="metric-card">
+                <h3>Number of Leads</h3>
+                <p>12,475 <span class="growth">^75%</span></p>
+            </div>
+            <div class="metric-card">
+                <h3>Number of Visitors</h3>
+                <p>500,251 <span class="growth">^75%</span></p>
+            </div>
+        </div>
+        <div class="tables">
+            <div class="table-container">
+                <h3>Top Lead Generating Posts</h3>
+                <table>
+                    <tr>
+                        <th>Content</th>
+                        <th>Impact On Leads</th>
+                    </tr>
+                    <tr>
+                        <td>Attribution 2.0</td>
+                        <td>8.82x</td>
+                    </tr>
+                    <tr>
+                        <td>SaaS Content Marketing Guide</td>
+                        <td>6.23x</td>
+                    </tr>
+                    <tr>
+                        <td>Why Choose Mexture</td>
+                        <td>2.03x</td>
+                    </tr>
+                    <tr>
+                        <td>SaaS Inbound Marketing</td>
+                        <td>1.69x</td>
+                    </tr>
+                    <tr>
+                        <td>Demand Generation Explained</td>
+                        <td>1.61x</td>
+                    </tr>
+                </table>
+                <button class="see-more-btn">See More</button>
+            </div>
+            <div class="table-container">
+                <h3>Suggested Topics for High ROI</h3>
+                <table>
+                    <tr>
+                        <th>Content</th>
+                        <th>Impact On Leads</th>
+                    </tr>
+                    <tr>
+                        <td>Content Marketing</td>
+                        <td>8.82x</td>
+                    </tr>
+                    <tr>
+                        <td>Content Marketing Guide</td>
+                        <td>6.23x</td>
+                    </tr>
+                    <tr>
+                        <td>Attribution Modeling</td>
+                        <td>2.03x</td>
+                    </tr>
+                    <tr>
+                        <td>SaaS Inbound Marketing</td>
+                        <td>1.69x</td>
+                    </tr>
+                    <tr>
+                        <td>Demand Generation Explained</td>
+                        <td>1.61x</td>
+                    </tr>
+                </table>
+                <button class="see-more-btn">See More</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
