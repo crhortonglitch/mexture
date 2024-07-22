@@ -1,7 +1,8 @@
 body {
     display: flex;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
 }
 
 .sidebar {
@@ -12,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -26,8 +28,9 @@ ul {
 }
 
 li {
-    padding: 10px 0;
+    padding: 15px 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 li.active, li:hover {
@@ -41,6 +44,12 @@ li.active, li:hover {
     padding: 10px;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.invite-btn:hover {
+    background-color: #16a085;
 }
 
 .main-content {
@@ -52,37 +61,67 @@ li.active, li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .date-range input, .conversion-event-btn, .project-dropdown {
     padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
     margin-right: 10px;
+}
+
+.conversion-event-btn {
+    background-color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conversion-event-btn:hover {
+    background-color: #bdc3c7;
+}
+
+.project-dropdown {
+    background-color: #ecf0f1;
 }
 
 .summary {
     background-color: #ecf0f1;
     padding: 20px;
-    margin: 20px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.summary h2 {
+    margin-top: 0;
 }
 
 .metrics {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .metric-card {
-    background-color: #ecf0f1;
+    background-color: white;
     padding: 20px;
     width: 23%;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .metric-card h3 {
     margin: 0;
+    font-weight: normal;
+    color: #7f8c8d;
 }
 
 .metric-card p {
     font-size: 24px;
     margin: 10px 0 0;
+    font-weight: bold;
 }
 
 .growth {
@@ -96,16 +135,26 @@ li.active, li:hover {
 
 .table-container {
     width: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table-container h3 {
+    margin-top: 0;
 }
 
 .table-container table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
 .table-container th, .table-container td {
     border: 1px solid #bdc3c7;
     padding: 10px;
+    text-align: left;
 }
 
 .see-more-btn {
@@ -114,6 +163,11 @@ li.active, li:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
-    display: block;
-    margin: 10px 0 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #2980b9;
 }
